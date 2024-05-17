@@ -1,4 +1,5 @@
 .team {
+    @include mb180;
     & .container {
         &-fulled {
             width: 100% !important;
@@ -11,14 +12,28 @@
     }
     &-slider {
         background-color: #0E0F21;
+        position: relative;
+        z-index: 1;
     }
-    &-wrap {}
+    & .borderBottom {
+        border-bottom: 2px dashed #1A1B2F;
+        opacity: .6;
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+    }
     &-card {
         text-align: center;
         min-height: 494px;
-        padding: 80px 60px;
+        padding: 80px 48px;
         width: 33.33333%;
         border-right: 2px dashed #1A1B2F;
+        &:nth-child(3n) {
+            border-right: 0;
+        }
         &-text {
             & span {
                 color: #55A2FF;
@@ -43,12 +58,10 @@
             justify-content: center;
         }
         &-link {
-            background-color: #12122C;
-            border: 1px solid #292A4F;
+            --size: 60px;
+            width: var(--size);
+            height: var(--size);
             box-shadow: 0 0 20px 0px #262740 inset;
-            &:hover {
-                background-color: $primary;
-            }
         }
     }
 }

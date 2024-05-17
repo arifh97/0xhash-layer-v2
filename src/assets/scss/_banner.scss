@@ -1,6 +1,22 @@
 .banner {
     padding-top: 245px;
     padding-bottom: 216px;
+    position: relative;
+    z-index: 1;
+    &::after {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 1128px;
+        height: 360px;
+        content: '';
+        background-image: url(../img/banner-bg.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
     &-content {
         & h1 {
             font-size: 72px;

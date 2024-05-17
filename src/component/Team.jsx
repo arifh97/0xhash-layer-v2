@@ -15,6 +15,7 @@ export default function Team() {
         </Row>
       </Container>
       <div className="team-slider">
+        <div className="borderBottom"></div>
         <Container>
           <Row>
             <Col xs={12}>
@@ -41,7 +42,7 @@ export default function Team() {
                     <div className="team-card-text">
                       <span>Tokenomics analytic</span>
                       <h5>Brooklyn Simmons</h5>
-                      <p>Strategic advisor Finblox, ambassador Socean Venture investor and angel  </p>
+                      <p>Strategic advisor Finblox, ambassador Socean Venture investor and angel</p>
                       <Social />
                     </div>
                   </div>
@@ -56,7 +57,7 @@ export default function Team() {
                     <div className="team-card-text">
                       <span>networking and support </span>
                       <h5>Savannah Nguyen</h5>
-                      <p>Strategic advisor Finblox, ambassador Socean Venture investor and angel  </p>
+                      <p>Strategic advisor Finblox, ambassador Socean Venture investor and angel</p>
                       <Social />
                     </div>
                   </div>

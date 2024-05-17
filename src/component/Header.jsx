@@ -67,14 +67,14 @@ export default function Header() {
                 </li>
               ))}
               <li className='heading-actions d-grid align-items-center d-lg-none'>
-                <a href="#" target='_blank' className='btn'>Sign Up</a>
-                <a href="#" target='_blank' className='btn bg-primary text-white'>Connect Wallet</a>
+                <a href="#" target='_blank' className='btn signUp'>Sign Up</a>
+                <a href="#" target='_blank' className='primary-btn'><span className='btn'>Connect Wallet</span></a>
               </li>
             </ul>
           </nav>
           <div className="heading-actions d-flex align-items-center flex-wrap">
-            <a href="#" target='_blank' className='btn'>Sign Up</a>
-            <a href="#" target='_blank' className='btn bg-primary text-white'>Connect Wallet</a>
+            <a href="#" target='_blank' className='btn signUp'>Sign Up</a>
+            <a href="#" target='_blank' className='primary-btn'><span className='btn'>Connect Wallet</span></a>
             <button className="heading-toggler d-lg-none" onClick={() => setIsMenu(!isMenu)}>
               <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3.08984 6H21.0898" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />

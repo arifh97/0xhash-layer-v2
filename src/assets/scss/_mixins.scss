@@ -262,6 +262,10 @@
     }
 }
 
+@mixin mb180 {
+    margin-bottom: 180px;
+}
+
 @mixin text_ellipsis($count) {
     display: -webkit-box;
     overflow: hidden;

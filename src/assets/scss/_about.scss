@@ -1,4 +1,6 @@
 .about {
+    padding-top: 200px;
+    @include mb180;
     & .common {
         &-title {
             margin-bottom: 40px !important;

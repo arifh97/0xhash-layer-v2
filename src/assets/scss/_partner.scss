@@ -1,0 +1,112 @@
+.partner {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    @include mb180;
+    padding-bottom: 0 !important;
+    &::after {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        content: '';
+        width: 896px;
+        height: 46px;
+        border-radius: 100%;
+        background-color: #6EA1DE;
+        filter: blur(95px);
+    }
+    & .common {
+        &-title {
+            & p {
+                @include xxxl {
+                    max-width: 534px;
+                    margin: 0 auto;
+                }
+                @include xxl {
+                    max-width: 534px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    &-item {
+        &-single {
+            width: 236px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+            & img {
+                filter: grayscale(1);
+            }
+            @include transition;
+            &:hover {
+                & img {
+                    filter: grayscale(0);
+                }
+            }
+            &:nth-child(5n) {
+                & .borderLeft {
+                    &::before {
+                        content: '';
+                    }
+                }
+            }
+            &:nth-child(n+6) {
+                & .borderTop {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+            & .borderTop {
+                &::after {
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    content: '';
+                    width: 210px;
+                    height: 1px;
+                    border-top: 1px solid #292A4F;
+                }
+                &::before {
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    content: '';
+                    width: 210px;
+                    height: 1px;
+                    border-top: 1px solid #292A4F;
+                }
+            }
+            & .borderLeft {
+                &::after {
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                    left: 0px;
+                    content: '';
+                    width: 1px;
+                    height: 82px;
+                    border-left: 1px solid #292A4F;
+                }
+                &::before {
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                    right: 0px;
+                    // content: '';
+                    width: 1px;
+                    height: 82px;
+                    border-left: 1px solid #292A4F;
+                }
+            }
+        }
+    }
+}

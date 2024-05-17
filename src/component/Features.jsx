@@ -13,7 +13,7 @@ export default function Features() {
       <Container>
         <Row>
           <Col xs={12}>
-            <CommonTitle className='text-center' subTitle='Benefits of OxETHDao ' title='hUnlock Exclusive Opportunities2' des='As a member of the OxETHDao community, you gain access to a world of exclusive opportunities that empower you to thrive personally and professionally.' />
+            <CommonTitle className='text-center' subTitle='Benefits of OxETHDao ' title='Unlock Exclusive Opportunities' des='As a member of the OxETHDao community, you gain access to a world of exclusive opportunities that empower you to thrive personally and professionally.' />
           </Col>
           <Col xs={12}>
             <div className="feature-card d-flex flex-wrap">

@@ -26,6 +26,11 @@
     @include sm {
         --bs-navbar-padding-y: 20px;
     }
+    .container {
+        @media only screen and (min-width: 1700px) {
+            max-width: 1440px;
+        }
+    }
     &.position-fixed {
         animation: headerAnimation .5s linear;
         background-color: rgba($color: $bg, $alpha: .6);
@@ -93,17 +98,19 @@
             grid-gap: 8px;
         }
     }
-    & .btn {
-        --bs-btn-border-width: 1px !important;
-        --bs-btn-padding-x: 20px !important;
-        --bs-btn-padding-y: 7px !important;
-        &:not(.bg-primary) {
-            border-color: $primary !important;
-            color: $primary !important;
-            &:hover {
-                color: $white !important;
-            }
+    & .signUp {
+        border: 1px solid #484967 !important;
+        border-radius: 10px !important;
+        background-color: #181833 !important;
+        box-shadow: 0 0 12px 6px #262740 inset;
+        &:hover {
+            background-color: $primary !important;
         }
+    }
+    & .btn {
+        --bs-btn-font-size: 18px !important;
+        --bs-btn-padding-x: 29px !important;
+        --bs-btn-padding-y: 17px !important;
     }
     &-toggler {
         --btn-padding-x: 4px;
