@@ -17,7 +17,7 @@ export default function Features() {
           </Col>
           <Col xs={12}>
             <div className="feature-card d-flex flex-wrap">
-              <div className="feature-card-single">
+              <div className="feature-card-single" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="" data-aos-offset="0">
                 <div className="icon">
                   <img src={icon1} alt="" />
                 </div>
@@ -26,7 +26,7 @@ export default function Features() {
                   <p>Gain exclusive access to a curated repository of resources, including research papers and toolkits, to stay ahead of the curve in your field.</p>
                 </div>
               </div>
-              <div className="feature-card-single">
+              <div className="feature-card-single" data-aos="fade-up" data-aos-duration="1600" data-aos-delay="" data-aos-offset="0">
                 <div className="icon">
                   <img src={icon2} alt="" />
                 </div>
@@ -35,7 +35,7 @@ export default function Features() {
                   <p>Gain exclusive access to a curated repository of resources, including research papers and toolkits, to stay ahead of the curve in your field.</p>
                 </div>
               </div>
-              <div className="feature-card-single">
+              <div className="feature-card-single" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="" data-aos-offset="0">
                 <div className="icon">
                   <img src={icon3} alt="" />
                 </div>
@@ -44,7 +44,7 @@ export default function Features() {
                   <p>Gain exclusive access to a curated repository of resources, including research papers and toolkits, to stay ahead of the curve in your field.</p>
                 </div>
               </div>
-              <div className="feature-card-single">
+              <div className="feature-card-single" data-aos="fade-up" data-aos-duration="1800" data-aos-delay="" data-aos-offset="0">
                 <div className="icon">
                   <img src={icon4} alt="" />
                 </div>
@@ -53,7 +53,7 @@ export default function Features() {
                   <p>Gain exclusive access to a curated repository of resources, including research papers and toolkits, to stay ahead of the curve in your field.</p>
                 </div>
               </div>
-              <div className="feature-card-single">
+              <div className="feature-card-single" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="" data-aos-offset="0">
                 <div className="icon">
                   <img src={icon5} alt="" />
                 </div>
@@ -62,7 +62,7 @@ export default function Features() {
                   <p>Gain exclusive access to a curated repository of resources, including research papers and toolkits, to stay ahead of the curve in your field.</p>
                 </div>
               </div>
-              <div className="feature-card-single">
+              <div className="feature-card-single" data-aos="fade-up" data-aos-duration="1600" data-aos-delay="" data-aos-offset="0">
                 <div className="icon">
                   <img src={icon6} alt="" />
                 </div>
