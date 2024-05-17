@@ -25,15 +25,17 @@
         left: 0;
         transform: translate(0, -50%);
     }
-    &-card {
-        text-align: center;
-        min-height: 494px;
-        padding: 80px 48px;
+    & .single {
         width: 33.33333%;
-        border-right: 2px dashed #1A1B2F;
         &:nth-child(3n) {
             border-right: 0;
         }
+    }
+    &-card {
+        text-align: center;
+        min-height: 494px;
+        padding: 80px 34px;
+        border-right: 2px dashed #1A1B2F;
         &-text {
             & span {
                 color: #55A2FF;
@@ -42,6 +44,7 @@
                 font-weight: 500;
                 line-height: 150%;
                 margin-bottom: 8px;
+                text-transform: uppercase;
             }
             & h5 {
                 margin-bottom: 16px;

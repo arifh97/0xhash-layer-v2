@@ -1,4 +1,4 @@
-import {Container,Row,Col} from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 import CommonTitle from './CommonTitle'
 import Social from './Social'
 import img1 from '../assets/img/team-img-1.png'
@@ -10,7 +10,7 @@ export default function Team() {
       <Container>
         <Row>
           <Col xs={12}>
-          <CommonTitle className=""  title="Our Team"/>
+            <CommonTitle className="" title="Our Team" />
           </Col>
         </Row>
       </Container>
@@ -19,23 +19,11 @@ export default function Team() {
         <Container>
           <Row>
             <Col xs={12}>
-                <div className="team-wrap d-flex flex-wrap">
+              <div className="team-wrap d-flex flex-wrap">
+                <div className="single">
                   <div className="team-card">
                     <div className="team-card-img">
                       <img src={img1} alt="" />
-                    </div>
-                  </div>
-                  <div className="team-card">
-                    <div className="team-card-text">
-                      <span>Product management</span>
-                      <h5>Leslie Alexander</h5>
-                      <p>UGC, crypto, high-tech Product, marketing and UX manager, Ex-Youtube, Ex-Glassdoor</p>
-                      <Social />
-                    </div>
-                  </div>
-                  <div className="team-card">
-                    <div className="team-card-img">
-                      <img src={img2} alt="" />
                     </div>
                   </div>
                   <div className="team-card">
@@ -46,13 +34,28 @@ export default function Team() {
                       <Social />
                     </div>
                   </div>
-
+                </div>
+                <div className="single d-flex flex-column-reverse">
                   <div className="team-card">
                     <div className="team-card-img">
                       <img src={img3} alt="" />
                     </div>
                   </div>
-
+                  <div className="team-card">
+                    <div className="team-card-text">
+                      <span>Product management</span>
+                      <h5>Leslie Alexander</h5>
+                      <p>UGC, crypto, high-tech Product, marketing and UX manager, Ex-Youtube, Ex-Glassdoor</p>
+                      <Social />
+                    </div>
+                  </div>
+                </div>
+                <div className="single">
+                  <div className="team-card">
+                    <div className="team-card-img">
+                      <img src={img2} alt="" />
+                    </div>
+                  </div>
                   <div className="team-card">
                     <div className="team-card-text">
                       <span>networking and support </span>
@@ -62,7 +65,8 @@ export default function Team() {
                     </div>
                   </div>
                 </div>
-              </Col>
+              </div>
+            </Col>
           </Row>
         </Container>
       </div>
