@@ -1,0 +1,36 @@
+.banner {
+    padding-top: 245px;
+    padding-bottom: 216px;
+    &-content {
+        & h1 {
+            font-size: 72px;
+            & span {
+                background-image: linear-gradient(to right, #0074FF 0%, #fff 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: rgba(0, 0, 0, 0);
+            }
+            margin-bottom: 20px;
+        }
+        & p {
+            @include font-20;
+            margin-bottom: 36px;
+        }
+        & ol {
+            list-style: disc;
+            margin-bottom: 36px;
+            display: flex;
+            flex-wrap: wrap;
+            & li {
+                &::marker {
+                    color: #13AE6D;
+                }
+                width: 50%;
+            }
+        }
+    }
+    &-img {
+        & img {
+            max-width: 580px;
+        }
+    }
+}

@@ -1,0 +1,76 @@
+.feature {
+    position: relative;
+    &::after {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        content: '';
+        width: 287px;
+        height: 46px;
+        border-radius: 100%;
+        background-color: #6055E6;
+        filter: blur(95px);
+    }
+    &-card {
+        gap: 30px;
+        &-single {
+            border: 1px solid #181933;
+            border-radius: 30px;
+            padding: 30px;
+            text-align: center;
+            width: 31.79%;
+            position: relative;
+            z-index: 1;
+            background-color: #0E0F21;
+            overflow: hidden;
+            &::after {
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%, 0);
+                content: '';
+                width: 287px;
+                height: 46px;
+                border-radius: 100%;
+                background-color: #6055E6;
+                filter: blur(95px);
+            }
+            &::before {
+                position: absolute;
+                z-index: -1;
+                top: 46px;
+                left: 0;
+                content: '';
+                width: 100%;
+                height: 247px;
+                background-image: url(../img/feature-card-bg.png);
+            }
+            & .icon {
+                --size: 100px;
+                width: var(--size);
+                height: var(--size);
+                margin: 0 auto;
+                border: 1px solid rgb(255, 255, 255, 50%);
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-image: linear-gradient(90deg, #3782C7 0%, #10294F 100%);
+                margin-bottom: 24px;
+                box-shadow: 0 0 8px -1px #3782C7;
+            }
+            & .text {
+                & h4 {
+                    @include font-28;
+                    margin-bottom: 12px;
+                }
+                & p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

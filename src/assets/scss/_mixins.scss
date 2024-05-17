@@ -186,6 +186,35 @@
     }
 }
 
+@mixin font-32 {
+    font-size: 32px;
+    line-height: 130%;
+    @include lg {
+        font-size: 32px;
+    }
+    @include md {
+        font-size: 28px;
+    }
+    @include sm {
+        font-size: 24px;
+    }
+}
+
+@mixin font-28 {
+    font-size: 28px;
+    line-height: 135%;
+    font-weight: 500;
+    @include xl {
+        font-size: 26px;
+    }
+    @include lg {
+        font-size: 24px;
+    }
+    @include mmd {
+        font-size: 22px;
+    }
+}
+
 @mixin font-22 {
     font-size: 22px;
     line-height: 140%;

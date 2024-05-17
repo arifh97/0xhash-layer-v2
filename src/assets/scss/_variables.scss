@@ -1,10 +1,15 @@
-$font-1:'Roboto';
-$font-2:'poppins';
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+$font-1:"DM Sans",
+sans-serif;
+$font-2:"Rubik",
+sans-serif;
 $white:#fff;
 $black:#000;
-$primary: #15ACFF;
-$secondary: #050505;
+$meta:#DBDBE6;
+$primary: #364CDC;
+$secondary: #4E94FD;
 $text:#C0C3C5;
+$paragraph:#B5B5C4;
 $heading: #EEEEF4;
 $border:#4B4B4B;
-$bg:#070707;
+$bg:#02031D;
