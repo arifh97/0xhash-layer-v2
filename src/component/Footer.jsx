@@ -1,7 +1,60 @@
-import {Container,Row,Col} from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
+import { Link } from 'react-scroll';
+import Social from './Social'
+
+import logo from '../assets/img/logo.png'
 
 export default function Footer() {
+  const navLinks = [
+    {
+      btn_title: 'About',
+      to: 'about'
+    },
+    {
+      btn_title: 'Membership',
+      to: 'membership'
+    },
+    {
+      btn_title: 'Team',
+      to: 'team'
+    },
+    {
+      btn_title: 'Partners',
+      to: 'partners'
+    },
+  ];
   return (
-    <div>Footer</div>
+    <footer className='footer'>
+      <Container>
+        <Row>
+          <Col xs={12}>
+            <div className="d-flex align-items-center flex-wrap justify-content-between">
+              <Link className="logo" to="banner" spy={true} smooth={true} duration={700} offset={0}>
+                <img src={logo} alt='logo' />
+              </Link>
+              <ul className="d-lg-flex align-items-center">
+                {navLinks.map((link, index) => (
+                  <li key={index} className='d-block'>
+                    <Link className="heading-link text-capitalize" to={link.to}>{link.btn_title}</Link>
+                  </li>
+                ))}
+                <li className='heading-actions d-grid align-items-center d-lg-none'>
+                  <a href="#" target='_blank' className='btn'>Sign Up</a>
+                  <a href="#" target='_blank' className='btn bg-primary text-white'>Connect Wallet</a>
+                </li>
+              </ul>
+              <Social />
+            </div>
+          </Col>
+        </Row>
+      </Container>
+      <div className="footer-copyright border-top">
+        <Container fluid>
+          <Col xs={12}>
+            <p className='text-center'>©2024 OxETHDao All Rights Reserved.</p>
+          </Col>
+        </Container>
+      </div>
+    </footer>
   )
 }
