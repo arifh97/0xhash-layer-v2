@@ -40,6 +40,9 @@
             justify-content: center;
             position: relative;
             z-index: 1;
+            @include sm {
+                width: 50%;
+            }
             & img {
                 filter: grayscale(1);
             }
@@ -111,8 +114,8 @@
                     }
                 }
             }
-            @include mmd {
-                &:nth-child(1n) {
+            @include sm {
+                &:nth-child(2n) {
                     & .borderLeft {
                         &::before {
                             content: '';

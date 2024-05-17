@@ -99,6 +99,9 @@
                 margin-bottom: 22px;
                 text-align: start;
             }
+            @include sm {
+                justify-content: center;
+            }
             & li {
                 &::marker {
                     color: #13AE6D;
@@ -106,6 +109,7 @@
                 width: 50%;
                 @include sm {
                     font-size: 16px;
+                    width: 51%;
                 }
             }
         }

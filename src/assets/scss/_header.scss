@@ -111,8 +111,11 @@
         --bs-btn-font-size: 18px !important;
         --bs-btn-padding-x: 29px !important;
         --bs-btn-padding-y: 17px !important;
+        @include sm {
+            --bs-btn-padding-y: 12px !important;
+        }
         @include ssm {
-            padding: 18px 10px !important;
+            padding: 12px 10px !important;
         }
     }
     &-toggler {
