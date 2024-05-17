@@ -264,6 +264,15 @@
 
 @mixin mb180 {
     margin-bottom: 180px;
+    @include xl {
+        margin-bottom: 140px;
+    }
+    @include lg {
+        margin-bottom: 100px;
+    }
+    @include mmd {
+        margin-bottom: 80px;
+    }
 }
 
 @mixin text_ellipsis($count) {

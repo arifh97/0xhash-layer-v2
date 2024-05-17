@@ -32,7 +32,7 @@ export default function Footer() {
               <Link className="logo" to="banner" spy={true} smooth={true} duration={700} offset={0}>
                 <img src={logo} alt='logo' />
               </Link>
-              <ul className="d-lg-flex align-items-center">
+              <ul className="d-lg-flex align-items-center d-none">
                 {navLinks.map((link, index) => (
                   <li key={index} className='d-block'>
                     <Link className="heading-link text-capitalize" to={link.to}>{link.btn_title}</Link>

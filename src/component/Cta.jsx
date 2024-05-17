@@ -8,7 +8,7 @@ export default function Cta() {
         <Row>
           <Col xs={12} className=''>
             <div className="cta-wrap d-flex justify-content-center">
-              <Col lg={6}>
+              <Col md={10} lg={7} xl={6}>
                 <div className="cta-content">
                   <CommonTitle className='text-center' title='Get in touch for a customised solution ' des='Get instant access for a free trial, no credit card, no risk' />
                   <div className="cta-input d-flex align-items-center">

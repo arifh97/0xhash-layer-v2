@@ -1,13 +1,11 @@
 .team {
     @include mb180;
-    & .container {
-        &-fulled {
-            width: 100% !important;
-        }
-    }
     & .common {
         &-title {
             margin-bottom: 85px;
+            @include sm {
+                margin-bottom: 40px;
+            }
         }
     }
     &-slider {
@@ -27,15 +25,39 @@
     }
     & .single {
         width: 33.33333%;
+        border-right: 2px dashed #1A1B2F;
         &:nth-child(3n) {
             border-right: 0;
+        }
+        @include md {
+            width: 49.33333%;
+            &:nth-child(2n) {
+                border-right: 0;
+            }
+        }
+        @include sm {
+            width: 100%;
         }
     }
     &-card {
         text-align: center;
         min-height: 494px;
         padding: 80px 34px;
-        border-right: 2px dashed #1A1B2F;
+        @include xl {
+            min-height: 440px;
+        }
+        @include lg {
+            min-height: 356px;
+            padding: 40px 19px;
+        }
+        @include mmd {
+            min-height: 356px;
+            padding: 40px 19px;
+        }
+        @include sm {
+            padding: 32px 19px;
+            padding-bottom: 0;
+        }
         &-text {
             & span {
                 color: #55A2FF;

@@ -8,6 +8,12 @@
         position: relative;
         z-index: 1;
         overflow: hidden;
+        @include lg {
+            padding: 70px 0;
+        }
+        @include mmd {
+            padding: 50px 0;
+        }
         &::after {
             position: absolute;
             z-index: -1;
@@ -42,6 +48,10 @@
     }
     &-input {
         gap: 16px;
+        @include ssm {
+            flex-direction: column;
+            text-align: center;
+        }
         & input {
             width: 100%;
             height: 58px;

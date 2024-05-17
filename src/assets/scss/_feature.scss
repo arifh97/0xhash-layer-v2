@@ -28,11 +28,25 @@
                     max-width: 700px;
                     margin: 0 auto;
                 }
+                @include xl {
+                    max-width: 700px;
+                    margin: 0 auto;
+                }
+                @include lg {
+                    max-width: 700px;
+                    margin: 0 auto;
+                }
             }
         }
     }
     &-card {
         gap: 30px;
+        @include lg {
+            justify-content: center;
+        }
+        @include mmd {
+            justify-content: center;
+        }
         &-single {
             border: 1px solid #181933;
             border-radius: 30px;
@@ -43,6 +57,18 @@
             z-index: 1;
             background-color: #0E0F21;
             overflow: hidden;
+            @include xl {
+                width: 31.5%;
+            }
+            @include lg {
+                width: 43.5%;
+            }
+            @include md {
+                width: 47.68%;
+            }
+            @include sm {
+                width: 100%;
+            }
             &::after {
                 position: absolute;
                 z-index: -1;
@@ -79,6 +105,12 @@
                 background-image: linear-gradient(90deg, #3782C7 0%, #10294F 100%);
                 margin-bottom: 24px;
                 box-shadow: 0 0 8px -1px #3782C7;
+                @include lg {
+                    --size: 90px;
+                }
+                @include mmd {
+                    --size: 90px;
+                }
             }
             & .text {
                 & h4 {

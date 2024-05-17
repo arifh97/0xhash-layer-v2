@@ -63,6 +63,70 @@
                     }
                 }
             }
+            @include xl {
+                &:nth-child(4n) {
+                    & .borderLeft {
+                        &::before {
+                            content: '';
+                        }
+                    }
+                }
+                &:nth-child(n+5) {
+                    & .borderTop {
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            @include lg {
+                &:nth-child(3n) {
+                    & .borderLeft {
+                        &::before {
+                            content: '';
+                        }
+                    }
+                }
+                &:nth-child(n+4) {
+                    & .borderTop {
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            @include mmd {
+                &:nth-child(2n) {
+                    & .borderLeft {
+                        &::before {
+                            content: '';
+                        }
+                    }
+                }
+                &:nth-child(n+3) {
+                    & .borderTop {
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            @include mmd {
+                &:nth-child(1n) {
+                    & .borderLeft {
+                        &::before {
+                            content: '';
+                        }
+                    }
+                }
+                &:nth-child(n+3) {
+                    & .borderTop {
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
             & .borderTop {
                 &::after {
                     position: absolute;

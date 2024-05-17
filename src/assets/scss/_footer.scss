@@ -5,12 +5,35 @@
     z-index: 1;
     background-image: url(../img/footer-bg.png);
     background-repeat: no-repeat;
-    background-size: contain;
     background-position: center;
+    background-size: cover;
+    @include xxxl {
+        background-size: contain;
+    }
+    @include xl {
+        padding-top: 55px;
+    }
+    @include lg {
+        padding-top: 40px;
+    }
+    @include mmd {
+        padding-top: 36px;
+    }
     &-copyright {
         --bs-border-color: #10102E;
         padding-top: 20px;
         padding-bottom: 30px;
         margin-top: 100px;
+        @include xl {
+            margin-top: 55px;
+        }
+        @include lg {
+            margin-top: 40px;
+            padding-bottom: 20px;
+        }
+        @include mmd {
+            margin-top: 36px;
+            padding: 16px 0;
+        }
     }
 }

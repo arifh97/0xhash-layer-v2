@@ -5,8 +5,8 @@ export default function Banner() {
   return (
     <div className='banner common'>
       <Container>
-        <Row>
-          <Col lg={6}>
+        <Row className='justify-content-center justify-content-lg-start'>
+          <Col xs={12} md={10} lg={7} xl={6}>
             <div className="banner-content">
               <span className='common-meta'>distinct styles, Choose your identity.</span>
               <h1>OxETHDao <span>Members’ Club</span></h1>
@@ -27,7 +27,7 @@ export default function Banner() {
               </a>
             </div>
           </Col>
-          <Col lg={6}>
+          <Col xs={12} md={10} lg={5} xl={6}>
             <div className="banner-img">
               <img src={bannerImg} alt="" />
             </div>

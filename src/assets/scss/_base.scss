@@ -151,11 +151,27 @@ input[type=number] {
             color: $heading;
             margin-bottom: 20px;
             text-transform: capitalize;
+            @include xl {
+                font-size: 46px;
+            }
+            @include lg {
+                font-size: 42px;
+            }
+            @include mmd {
+                font-size: 38px;
+            }
+            @include sm {
+                text-align: center;
+                font-size: 32px;
+            }
         }
         & p {
             margin-bottom: 10px;
         }
         margin-bottom: 60px;
+        @include lg {
+            margin-bottom: 40px;
+        }
         @include md {
             margin-bottom: 40px;
         }
@@ -179,6 +195,7 @@ a {
     @include transition;
     position: relative;
     z-index: 1;
+    text-align: center;
     &::after {
         position: absolute;
         top: 0;
@@ -217,10 +234,12 @@ a {
         color: $heading !important;
         background-color: none !important;
     }
-    @include sm {
-        --bs-btn-font-size: 16px !important;
-        --bs-btn-line-height: 26px !important;
+    @include mmd {
+        --bs-btn-padding-x: 30px !important;
+        --bs-btn-padding-y: 17px !important;
+        --bs-btn-font-size: 18px !important;
     }
+    @include sm {}
     &.bg-primary {
         border-color: $primary !important;
         color: $secondary !important;
