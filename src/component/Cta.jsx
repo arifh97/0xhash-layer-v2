@@ -12,8 +12,8 @@ export default function Cta() {
                 <div className="cta-content">
                   <CommonTitle className='text-center' title='Get in touch for a customised solution ' des='Get instant access for a free trial, no credit card, no risk' />
                   <div className="cta-input d-flex align-items-center">
-                    <input type="email" name="" id="" placeholder='Enter your mail' data-aos="fade-right" data-aos-duration="1400" data-aos-delay="" data-aos-offset="0"/>
-                    <a href="#" className="primary-btn" data-aos="fade-right" data-aos-duration="1600" data-aos-delay="" data-aos-offset="0"><span className="btn">Subscribe</span></a>
+                    <input type="email" name="" id="" placeholder='Enter your mail' data-aos="fade-up" data-aos-duration="1400" data-aos-delay="" data-aos-offset="0"/>
+                    <a href="#" className="primary-btn" data-aos="fade-up" data-aos-duration="1600" data-aos-delay="" data-aos-offset="0"><span className="btn">Subscribe</span></a>
                   </div>
                 </div>
               </Col>

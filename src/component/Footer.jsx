@@ -30,9 +30,9 @@ export default function Footer() {
           <Col xs={12}>
             <div className="d-flex align-items-center flex-wrap justify-content-between">
               <Link className="logo" to="banner" spy={true} smooth={true} duration={700} offset={0}>
-                <img src={logo} alt='logo'  data-aos="fade-left" data-aos-duration="1200" data-aos-delay="" data-aos-offset="0"/>
+                <img src={logo} alt='logo'  data-aos="fade-up" data-aos-duration="1200" data-aos-delay="" data-aos-offset="0"/>
               </Link>
-              <ul className="d-lg-flex align-items-center d-none" data-aos="fade-left" data-aos-duration="1400" data-aos-delay="" data-aos-offset="0">
+              <ul className="d-lg-flex align-items-center d-none" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="" data-aos-offset="0">
                 {navLinks.map((link, index) => (
                   <li key={index} className='d-block'>
                     <Link className="heading-link text-capitalize" to={link.to}>{link.btn_title}</Link>
@@ -51,7 +51,7 @@ export default function Footer() {
       <div className="footer-copyright border-top">
         <Container fluid>
           <Col xs={12}>
-            <p className='text-center' data-aos="fade-left" data-aos-duration="1800" data-aos-delay="" data-aos-offset="0">©2024 OxETHDao All Rights Reserved.</p>
+            <p className='text-center' data-aos="fade-up" data-aos-duration="1800" data-aos-delay="" data-aos-offset="0">©2024 OxETHDao All Rights Reserved.</p>
           </Col>
         </Container>
       </div>
