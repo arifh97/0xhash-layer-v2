@@ -35,7 +35,7 @@ export default function Footer() {
               <ul className="d-lg-flex align-items-center d-none" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="" data-aos-offset="0">
                 {navLinks.map((link, index) => (
                   <li key={index} className='d-block'>
-                    <Link className="heading-link text-capitalize" to={link.to}>{link.btn_title}</Link>
+                    <Link className="heading-link text-capitalize" to={link.to} spy={true} smooth={true} duration={700} offset={-110}>{link.btn_title}</Link>
                   </li>
                 ))}
                 <li className='heading-actions d-grid align-items-center d-lg-none'>
