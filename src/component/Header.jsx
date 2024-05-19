@@ -13,7 +13,7 @@ export default function Header() {
     },
     {
       btn_title: 'Membership',
-      to: 'membership'
+      to: 'feature'
     },
     {
       btn_title: 'Team',
@@ -21,7 +21,7 @@ export default function Header() {
     },
     {
       btn_title: 'Partners',
-      to: 'partners'
+      to: 'partner'
     },
   ];
   const [isMenu, setIsMenu] = useState(false);
@@ -63,7 +63,7 @@ export default function Header() {
             <ul className="d-lg-flex align-items-center">
               {navLinks.map((link, index) => (
                 <li key={index} className='d-block'>
-                  <Link className="heading-link text-capitalize" to={link.to} onTouchStart={() => handleTouchStart(link.to)}>{link.btn_title}</Link>
+                  <Link className="heading-link text-capitalize" to={link.to} onTouchStart={() => handleTouchStart(link.to)}  spy={true} smooth={true} duration={700} offset={-110}>{link.btn_title}</Link>
                 </li>
               ))}
               <li className='heading-actions d-grid align-items-center d-lg-none'>

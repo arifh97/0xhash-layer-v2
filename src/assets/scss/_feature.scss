@@ -40,35 +40,15 @@
         }
     }
     &-card {
-        gap: 30px;
-        @include lg {
-            justify-content: center;
-        }
-        @include mmd {
-            justify-content: center;
-        }
         &-single {
             border: 1px solid #181933;
             border-radius: 30px;
-            padding: 30px;
+            padding: 34px;
             text-align: center;
-            width: 31.68%;
             position: relative;
             z-index: 1;
             background-color: #0E0F21;
             overflow: hidden;
-            @include xl {
-                width: 31.5%;
-            }
-            @include lg {
-                width: 43.5%;
-            }
-            @include md {
-                width: 47.68%;
-            }
-            @include sm {
-                width: 100%;
-            }
             &::after {
                 position: absolute;
                 z-index: -1;

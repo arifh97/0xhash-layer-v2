@@ -89,8 +89,8 @@ input[type=number] {
         }
     }
     & h1,
-    h2,
-    h3 {
+    & h2,
+    & h3 {
         margin-bottom: 20px;
     }
     & p {
@@ -283,4 +283,8 @@ a {
             --width: 40px;
         }
     }
+}
+
+#root {
+    overflow: hidden;
 }

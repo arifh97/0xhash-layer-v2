@@ -21,7 +21,7 @@ export default function Banner() {
                 <span className="btn"> Get Connected
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.83301 14.9993L14.1663 6.66602" stroke="#EEEEF4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M5.83301 6.66602H14.1663V14.9993" stroke="#EEEEF4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M5.83301 6.66602H14.1663V14.9993" stroke="#EEEEF4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </span>
               </a>

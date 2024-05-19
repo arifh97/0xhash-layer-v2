@@ -4,7 +4,6 @@ export default function Cta() {
   return (
     <div className='cta'>
       <Container>
-
         <Row>
           <Col xs={12} className=''>
             <div className="cta-wrap d-flex justify-content-center">
