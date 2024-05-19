@@ -46,7 +46,7 @@ export default function Features() {
         <Row className='common-row'>
           {features.map((item, index) => (
             <Col xs={12} md={6} lg={4} key={index} className='d-flex'>
-              <div className="feature-card-single w-100" data-aos="fade-up" data-aos-duration="1200" data-aos-delay={`1${index+1}`} data-aos-offset="0">
+              <div className="feature-card-single w-100" data-aos="fade-up" data-aos-duration="1200" data-aos-delay={`${index+1}00`} data-aos-offset="0">
                 <div className="icon">
                   <img src={item.icon} alt="" />
                 </div>
