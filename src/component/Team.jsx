@@ -194,7 +194,7 @@ export default function Team() {
                         <div className="team-card">
                           <div className="team-card-text">
                             <span data-aos="fade-up" data-aos-duration="1400" data-aos-delay="" data-aos-offset="0">{item.meta}</span>
-                            <h5 data-aos="fade-up" data-aos-duration="1600" data-aos-delay="" data-aos-offset="0">{item.title}</h5>
+                            <h5 data-aos="fade-up" data-aos-duration="1600" data-aos-delay="" data-aos-offset="0">{item.name}</h5>
                             <p data-aos="fade-up" data-aos-duration="1800" data-aos-delay="" data-aos-offset="0">{item.des}</p>
                             <ul className={`social-list d-flex align-items-center flex-wrap gap-2`}>
                               {item.social.map((item, index) => (
