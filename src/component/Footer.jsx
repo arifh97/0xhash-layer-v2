@@ -12,7 +12,7 @@ export default function Footer() {
     },
     {
       btn_title: 'Membership',
-      to: 'membership'
+      to: 'feature'
     },
     {
       btn_title: 'Team',
@@ -20,7 +20,7 @@ export default function Footer() {
     },
     {
       btn_title: 'Partners',
-      to: 'partners'
+      to: 'partner'
     },
   ];
   return (
