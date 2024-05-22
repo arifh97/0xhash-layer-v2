@@ -20,6 +20,10 @@ export default function Header() {
       to: 'team'
     },
     {
+      btn_title: 'Products',
+      to: 'product'
+    },
+    {
       btn_title: 'Partners',
       to: 'partner'
     },
@@ -63,7 +67,7 @@ export default function Header() {
             <ul className="d-lg-flex align-items-center">
               {navLinks.map((link, index) => (
                 <li key={index} className='d-block'>
-                  <Link className="heading-link text-capitalize" to={link.to} onTouchStart={() => handleTouchStart(link.to)}  spy={true} smooth={true} duration={700} offset={-110}>{link.btn_title}</Link>
+                  <Link className="heading-link text-capitalize" to={link.to} onTouchStart={() => handleTouchStart(link.to)}  spy={true} smooth={true} duration={700} offset={-100}>{link.btn_title}</Link>
                 </li>
               ))}
               <li className='heading-actions d-grid align-items-center d-lg-none'>

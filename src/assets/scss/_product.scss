@@ -1,0 +1,33 @@
+.product {
+    padding: 180px 0;
+    @include xl {
+        padding: 140px 0;
+    }
+    @include lg {
+        padding: 100px 0;
+    }
+    @include mmd {
+        padding: 80px 0;
+    }
+    &-wrap {
+        gap: 50px;
+        @include lg {
+            gap: 34px;
+        }
+        @include md {
+            gap: 30px;
+        }
+        @include sm {
+            gap: 26px;
+        }
+    }
+    &-item {
+        height: auto;
+        @include mmd {
+            height: 48px;
+        }
+        & img {
+            height: 100%;
+        }
+    }
+}

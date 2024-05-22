@@ -4,6 +4,7 @@ import About from './component/About'
 import Features from './component/Features'
 import Team from './component/Team'
 import Partner from './component/Partner'
+import Products from './component/Products'
 import Cta from './component/Cta'
 import Footer from './component/Footer'
 import { useEffect } from 'react'
@@ -20,6 +21,7 @@ export default function App() {
       <About />
       <Features />
       <Team />
+      <Products />
       <Partner />
       <Cta />
       <Footer />

@@ -49,6 +49,15 @@
             z-index: 1;
             background-color: #0E0F21;
             overflow: hidden;
+            @include lg {
+                padding: 24px;
+            }
+            @include md {
+                padding: 26px;
+            }
+            @include sm {
+                padding: 20px;
+            }
             &::after {
                 position: absolute;
                 z-index: -1;

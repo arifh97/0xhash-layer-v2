@@ -19,6 +19,10 @@ export default function Footer() {
       to: 'team'
     },
     {
+      btn_title: 'Products',
+      to: 'product'
+    },
+    {
       btn_title: 'Partners',
       to: 'partners'
     },
